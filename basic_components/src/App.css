@@ -1,0 +1,10 @@
+body {
+  display: flex;
+
+  background-color: rgba(217, 211, 211, 0.256);
+}
+
+.app-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
