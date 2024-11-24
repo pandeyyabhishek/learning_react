@@ -1,5 +1,8 @@
 import React, { createContext, useState } from 'react'
 import ChildC from './components/ChildC';
+import ChildA from './components/ChildA';
+import ChildB from './components/ChildB';
+
 
 const userContext=createContext();
 const App = () => {
@@ -12,9 +15,15 @@ const App = () => {
   return (
     <div>
       <h1>My name is : {name}</h1>
-    <userContext.Provider name={name} setName={setName} >
-    <ChildC></ChildC>
+      <ChildA></ChildA>
+      <ChildB></ChildB>
+    <userContext.Provider value={{name,setName}} >
+        <ChildC></ChildC>
     </userContext.Provider>
+
+      <div>
+        
+      </div>
     </div>
   )
 }
