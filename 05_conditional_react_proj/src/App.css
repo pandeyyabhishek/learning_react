@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.app-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  flex-direction: column;
+}
+
+button {
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.6rem;
+  margin: 1rem;
+  cursor: pointer;
+  background-color: #ffffff5c;
+  font-size: larger;
+}
